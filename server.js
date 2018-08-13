@@ -57,7 +57,7 @@ var server = http.createServer(function(request, response){
   }
   else
   {
-    response.write('404\n')
+    response.statusCode =404
     response.end()
   }
 
